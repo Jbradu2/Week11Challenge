@@ -43,6 +43,7 @@ app.get('/', (req, res) => {
 //This route serves the notes page 
 app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'notes.html'));
+  console.log(err)
 });
 //this route will redirect any unspecified routes back to "landing page"
 app.get('*', (req, res) => {
